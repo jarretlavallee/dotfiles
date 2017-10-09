@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Jarret Lavallee
+	email = jarret.lavallee@gmail.com
+[core]
+	editor = /usr/bin/vim
+[init]
+	templatedir = ~/.git-templates

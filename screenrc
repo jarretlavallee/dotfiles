@@ -1,0 +1,12 @@
+# Fri Jan 20 15:55:59 PST 2017
+shelltitle ""
+defscrollback 50000
+
+# Make screen messages stand out a little more - black on bright green.
+sorendition "+b kG"
+
+# Custom "tabbar"
+hardstatus alwayslastline
+hardstatus string '%{= kG}%{G}%{g}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%{W}%c%{g}]'
+
+term xterm
