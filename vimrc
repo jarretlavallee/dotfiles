@@ -11,10 +11,10 @@
 :  set laststatus=2        " always show status line
 : set undolevels=1000     " large undo history
 :endif
-:set tabstop=4
-:set shiftwidth=4
+:set tabstop=2
+:set shiftwidth=2
 :set expandtab
-:set softtabstop=4
+:set softtabstop=2
 
 
 
@@ -37,6 +37,10 @@ au BufRead,BufNewFile *_spec.rb
   \ nmap <F8> :!rspec --color %<CR>
 " Enable indentation matching for =>'s
 filetype plugin indent on
+
+" Show trailing whitepace and spaces before a tab:
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
